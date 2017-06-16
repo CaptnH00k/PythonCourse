@@ -1,0 +1,8 @@
+Aufgabe 3
+=========
+
+Während die zeiten von min_sort exponentiell wachsen,
+wachsen die zeiten von mergesort linear. 1000er Schritte
+scheinen auch bei mergesort gute ergebnisse zu liefern.
+
+Dauer: 3 stunden

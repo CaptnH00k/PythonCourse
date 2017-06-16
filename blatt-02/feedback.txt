@@ -1,0 +1,38 @@
+
+Aufgabe 1:   4.5 / 5
+
+Korrekt. Im letzten Schritt hätte man noch quadrieren können, damit man sieht,
+dass auch wirklich die quadratische Gleichung herauskommt, welche Phi löst.
+
+[-0.5] Man hätte auch noch hervorheben können, dass Phi die positive Lösung der
+       Gleichung ist (da es als Verhältnis zweier Längen definiert ist),
+       sodass die gesuchte zweite Lösung die negative wäre.
+
+--------------------
+
+Aufgabe 2:   3 / 5
+
+Vom Prinzip her korrekt.
+
+[-2] Im Induktionsschritt rechnest du ein bisschen im Kreis rum; Der Term in der
+     dritten Zeile ist praktisch der selbe wie in der vorletzten Zeile.
+     Wie du dann vor der vorletzten Zeile auf die letzte kommst, ist unklar.
+
+--------------------
+
+Aufgabe 3:   0 / 5
+
+(nicht bearbeitet)
+
+--------------------
+
+Aufgabe 4:   0 / 5
+
+(nicht bearbeitet)
+
+--------------------
+
+Gesamt:    7.5 / 20
+
+
+Bei Fragen zur Korrektur: E-Mail an Daniel.Bindemann@gmx.de

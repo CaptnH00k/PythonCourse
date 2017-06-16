@@ -1,0 +1,32 @@
+
+Aufgabe 1:   5 / 5
+
+--------------------
+
+Aufgabe 2:   5 / 5
+
+Gut! Code korrekt, passend dokumentiert und Tests ausreichend.
+
+--------------------
+
+Aufgabe 3:   2 / 5
+
+[-3] Schaubilder fehlen leider (und Laufzeiten für min-sort Analyse).
+
+Schätzungen der Laufzeiten machen Sinn. Genaue asymptotische Laufzeiten sind
+etwas anders:
+- Merge-Sort verläuft nicht linear, sondern log-linear (Ist aber in der Praxis
+  oft kein besonders erheblicher Unterschied, außer bei sehr großen Eingaben).
+- Min-Sort verläuft nicht exponentiell, sondern quadratisch (Letzteres ist noch
+  praxisrelevant, da polynomiell, ersteres meistens nicht).
+
+--------------------
+
+Aufgabe 4:   5 / 5
+
+--------------------
+
+Gesamt:   17 / 20
+
+
+Bei Fragen zur Korrektur: E-Mail an Daniel.Bindemann@gmx.de

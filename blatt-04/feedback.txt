@@ -1,0 +1,38 @@
+
+Aufgabe 1:   10 / 10
+
+Code korrekt, schön dokumentiert und getestet, super!
+
+Eine kleine Anmerkung bezüglich der "insert"/"lookup"-Methode:
+Einzeiler-Kommentare (mit den #) könnte man an manchen Stellen weglassen.
+An den Stellen, wo der Code selbst-dokumentierend ist, stören zu viele
+Kommentare nur beim Lesefluss. Beispiel in Zeile 128 in HashMap.py:
+
+    raise Exception("Couldn't insert key, HashMap full")
+
+Diese Zeile sagt exakt aus, was passiert ist und warum es passiert ist.
+Ein weiteres Kommentar darüber ist also überflüssig.
+
+Am besten also #-Kommentare nur dort verwenden, wo der Inhalt des Codes
+nicht offensichtlich ist. Oft reicht die Methodenbeschreibung im Docstring
+schon aus, um nachvollziehen zu können, was in der Methode geschieht.
+
+--------------------
+
+Aufgabe 2:   10 / 10
+
+Auch hier alles korrekt.
+
+Anmkerung:
+Man könnte noch einen Usage Hint einfügen, also das kleine Stückchen Code,
+welches prüft, ob die Kommandozeilen-Argumente passen, und ansonsten eine
+kleine Meldung ausgibt wie:
+
+   Usage: ./program_name.py arg1 arg2 arg3 ...
+
+--------------------
+
+Gesamt:   20 / 20
+
+
+Bei Fragen zur Korrektur: E-Mail an Daniel.Bindemann@gmx.de

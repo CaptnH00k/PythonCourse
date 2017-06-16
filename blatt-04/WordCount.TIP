@@ -1,0 +1,38 @@
+// Copyright 2017, University of Freiburg,
+// Chair of Algorithms and Data Structures.
+// Author: Hannah Bast <bast@cs.uni-freiburg.de>,
+//         Axel Lehmann <lehmann@cs.uni-freiburg.de>.
+
+// NOTE: this is a code design suggestion in pseudo-code. It is not supposed to
+// be compilable in any language. You have to translate it to Python, Java or 
+// C++ yourself. The purpose of this file is to suggest a basic design and 
+// settle questions you might have on what exactly your code is supposed to do.
+
+// Program WordCount that reads a text file, that can contain multiple words
+// per line, and returns the top-500 frequent words and frequencies. 
+class WordCount {
+  // PUBLIC MEMBERS
+  
+  // Read the text file given by filepath line by line.
+  //
+  // TEST CASE:
+  //   WordCount wc
+  //    wc.readTextFile('WordCount.TIP')
+  //    assert wc.hash_map.lookup("to") == 7
+  //    assert wc.hash_map.lookup("freiburg") == 4
+  //    assert wc.hash_map.lookup("wordcount") == 6
+  //    assert wc.hash_map.getKeyValuePairs().length == 120 
+  void readTextFile(String filepath);
+
+  // Compute the top 500 most frequent words and their frequencies.
+  // Generate the lines ready to plotted.
+  //
+  // TEST CASE:
+  //   WordCount wc
+  //   wc.hash_map = {'this': 3, 'is': 2, 'a': 5, 'test': 4}
+  //   wc.computeOutputLines()
+  // RESULT: (\t is a tabulator)
+  // ["1\t5\ta", "2\t4\ttest", "3\t3\tthis", "4\t2\tis"]
+  //
+  Array<String> computeFrequencyLines();
+}
