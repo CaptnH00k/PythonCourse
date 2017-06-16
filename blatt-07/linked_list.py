@@ -92,21 +92,30 @@ class LinkedList:
         [id = #3, prev = #4, next = #2, val = C]
         [id = #2, prev = #3, next = #1, val = B]
         [id = #1, prev = #2, next = #0, val = A]
+
+        >>> ll = LinkedList()
+        >>> ll
+        first = #0, last = #0
+        >>> ll.reverse()
+        >>> ll
+        first = #0, last = #0
         """
+        # If list is empty, I swear, didn't du nuthin
+        if self.first is None:
+            return
         reversed_list = LinkedList()
         next_item = self.first
         next_item_before = None
+        # we want our item ids to start with 1 again, so set to 0
         LinkedListItem.num_items = 0
+        # iterate over all items and add them in reverse order to reversed_list
         while next_item is not None:
             new_item = LinkedListItem(next_item.value)
-            reversed_list.insert_before(
-                new_item,
-                next_item_before
-            )
-            next_item_before = new_item
-            next_item = next_item.next
-        self.first = reversed_list.first
-        self.last = reversed_list.last
+            reversed_list.insert_before(new_item, next_item_before)
+            next_item_before, next_item = [new_item, next_item.next]
+        # overwrite self.first and self.last with properties of reversed_list
+        # so that our changes take effect
+        self.first, self.last = [reversed_list.first, reversed_list.last]
 
     def splice(self, l1, l2):
         """
@@ -138,17 +147,26 @@ class LinkedList:
         first = #2, last = #4
         [id = #2, prev = #0, next = #4, val = A]
         [id = #4, prev = #2, next = #0, val = D]
+        >>> ll.splice(item_A, item_D)
+        first = #2, last = #4
+        [id = #2, prev = #0, next = #4, val = A]
+        [id = #4, prev = #2, next = #0, val = D]
+        >>> ll
+        first = #0, last = #0
         """
-        l1.prev.next = l2.next
-        l2.next.prev = l1.prev
+        if l1.prev is not None:
+            l1.prev.next = l2.next
+        if l2.next is not None:
+            l2.next.prev = l1.prev
+        if self.first == l1:
+            self.first = l2.next
+        if self.last == l2:
+            self.last = None
 
-        l1.prev = None
-        l2.next = None
+        l1.prev = l2.next = None
 
         part_list = LinkedList()
-        part_list.first = l1
-        part_list.last = l2
-
+        part_list.first, part_list.last = [l1, l2]
         return part_list
 
 
