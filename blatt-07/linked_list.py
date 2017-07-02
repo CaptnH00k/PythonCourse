@@ -154,17 +154,29 @@ class LinkedList:
         >>> ll
         first = #0, last = #0
         """
+        # If the element before l1 is not None, l1 is not the first
+        # element in list, so set the pointer of previous
+        # element to the element after l2
         if l1.prev is not None:
             l1.prev.next = l2.next
+        else:
+            # If first element was l1, set it to the element after l2
+            self.first = l2.next
+
+        # If l2 is not last element, set the pointer of next element to
+        # the element before l1
         if l2.next is not None:
             l2.next.prev = l1.prev
-        if self.first == l1:
-            self.first = l2.next
-        if self.last == l2:
-            self.last = None
+        else:
+            # if last element was l2, set it to the element before l1
+            self.last = l1.prev
 
+        # In our sliced list there is nothing before first or after last
+        # element
         l1.prev = l2.next = None
 
+        # Create a new LinkedList and set first and last element to mutated
+        # l1 and l2
         part_list = LinkedList()
         part_list.first, part_list.last = [l1, l2]
         return part_list

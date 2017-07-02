@@ -1,0 +1,14 @@
+Dauer: 10h
+
+War nicht unbedingt ein einfache Aufgabe,
+aber durchaus eine die interessant war.
+Hätte man sicherlich in weniger Zeit geschafft
+(mit python und keinen ant fehlern), aber
+hat Spaß gemacht.
+
+Was war die entscheidende Mutation, die zum Homo Sapiens gefuhrt hat und wann war das?
+
+Der aufrechte Gang. Vorteile waren, dass der Mensch die Hände
+frei hatte (musste nicht mehr auf allen vieren rumkriechen)
+und somit diese benutzen konnte um später Werkzeuge zu bauen.
+Wikipedia sagt, das war vor 7 bis 5 millionen jahren.

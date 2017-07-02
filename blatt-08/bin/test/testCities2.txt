@@ -1,0 +1,5 @@
+Buch Haim	Zamonien	22000	42.00312	13.00137
+Freiberg	Germany	2000	13.200	11.040
+Freibuch	Zamonien	50000	14.000	16.001
+Freiburg	Germany	14	13.000	11.000
+TestCity	TestCountry	13	12.000	14.000
